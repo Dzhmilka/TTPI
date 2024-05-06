@@ -1,0 +1,207 @@
+@import 'normalize.css';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding-bottom: 48px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(to bottom, #92E792, #5CE75C);
+}
+
+/* Footer */
+
+.footer {
+    bottom: 0;
+    position: fixed;
+    padding: 10px;
+    background-color: #317B31;
+    width: 100%;
+}
+
+/* My photo (index.html) */
+
+.my__photo {
+    width:200px;
+}
+
+.my__photo img {
+    width: 200px;
+    height: 200px;
+}
+
+.my__photo figcaption {
+    text-align: center;
+}
+
+/* Schedule (rozklad.html) */
+
+.schedule__table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.schedule__table th,
+.schedule__table td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.schedule__table th {
+    background-color: grey;
+}
+.schedule__table tr:nth-child(even) {
+    background-color: lightgray;
+}
+.schedule__table tr:nth-child(odd) {
+    background-color: white;
+}
+
+/* Teachers list (rozklad.html) */
+
+.teachers__list li:last-child {
+    padding-bottom: 10px;
+}
+
+/* Header */
+
+.header {
+    background-color: #317B31;
+    padding: 10px;
+    text-align: center;
+}
+
+.header a {
+    color: black;
+}
+
+.header__title {
+    margin: 0px;
+}
+
+.header__nav {
+    margin-top: 10px;
+}
+
+.header__nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__nav-item {
+    display: inline-block;
+    margin-right: 24px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 720px) {
+    .header__nav-list {
+        display: flex;
+        flex-direction: column; /* Change to vertical layout */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .header__nav-item {
+        margin-bottom: 10px; /* Add spacing between menu items */
+    }
+}
+
+
+/* Sections */
+
+.about__title,
+.interests__title,
+.schedule__title,
+.news__title,
+.photo__title {
+    color: #036303;
+}
+
+.page {
+    margin: 0px 10px 0px 10px;
+}
+
+/* Photos (photo.html) */
+
+.photo {
+    width:220px;
+    margin-bottom: 20px;
+}
+
+.photo img {
+    width: 100%;
+    height: 200px;
+}
+
+.photo figcaption {
+    text-align: center;
+}
+
+@media (max-width: 720px) {
+    .photo {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    .photo img {
+        height: 300px;
+    }
+}
+
+/* Latest news (news.html) */
+
+.news {
+    width: 340px; 
+    margin-bottom: 40px;
+}
+
+.news p {
+    height: 84px; 
+    overflow: hidden;
+}
+  
+.news b {
+    font-size: 20px;
+}
+
+.news img {
+    width: 340px;
+    height: 200px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 720px) {
+    .news {
+        margin: auto;
+        margin-bottom: 40px;
+        width: 90%;
+    }
+    .news img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Internet Explorer 10 */
+
+.ie-warning {
+    display: none;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .ie-warning {
+        display: block;
+    }
+}

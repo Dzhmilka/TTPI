@@ -1,0 +1,20 @@
+@media print {
+    .ie-warning,
+    .header,
+    .footer {
+        display: none;
+    }
+
+    body {
+        background: none;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    a:after {
+        content: " (" attr(href) ")";
+    }
+
+    body {
+        padding: 50px;
+    }
+}
